@@ -34,16 +34,35 @@ const CTASection = () => {
             style and personality.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">
-                Schedule Free Consultation
+            <Button
+              variant="hero"
+              size="xl"
+              asChild
+              className="w-full sm:w-auto rounded-[30px] px-6 py-4 sm:py-5 text-base sm:text-lg transition"
+            >
+              <Link
+                to="/contact"
+                className="flex items-center justify-center gap-3"
+              >
+                <span>Schedule Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+
+            <Button
+              variant="heroOutline"
+              size="xl"
+              asChild
+              className="w-full sm:w-auto rounded-[30px] px-6 py-4 sm:py-5 text-base sm:text-lg border border-primary-foreground/20 bg-transparent flex items-center justify-center gap-3 transition"
+            >
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
                 <MessageCircle className="w-5 h-5" />
-                Chat on WhatsApp
+                <span>Chat on WhatsApp</span>
               </a>
             </Button>
           </div>

@@ -49,7 +49,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["akashmi5746@gmail.com", "info@ambeyinterior.com"],
+    details: ["akashmi5746@gmail.com", "ambeyinterio2003@gmail.com"],
     action: "mailto:akashmi5746@gmail.com",
   },
   {

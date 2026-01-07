@@ -15,13 +15,12 @@ const team = [
   {
     name: "Alok Mishra",
     role: "Founder & Lead Designer",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "/About_us/image2.png",
   },
   {
     name: "Akash Mishra",
     role: "Senior Interior Architect",
-    image: "/About_us/image.png",
+    image: "/About_us/image1.png",
   },
 ];
 

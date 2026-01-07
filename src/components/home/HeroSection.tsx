@@ -43,18 +43,17 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="xl" asChild>
+              <Button
+                variant="hero"
+                size="xl"
+                className="  text-sm sm:text-base md:text-lg py-6 sm:py-6 gap-2 shadow-lg hover:shadow-xl transition-shadow rounded-xl"
+                asChild
+              >
                 <Link to="/contact">
-                  Get Free Consultation
-                  <ArrowRight className="w-5 h-5" />
+                  <span>Get Free Consultation</span>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
               </Button>
-              {/* <Button variant="outline" size="xl" className="gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                  <Play className="w-4 h-4 text-accent fill-accent" />
-                </div>
-                Watch Our Work
-              </Button> */}
             </div>
 
             {/* Trust Stats */}
@@ -79,7 +78,9 @@ const HeroSection = () => {
                 <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
                   98%
                 </p>
-                <p className="text-xs md:text-sm text-muted-foreground">Happy Clients</p>
+                <p className="text-xs md:text-sm text-muted-foreground">
+                  Happy Clients
+                </p>
               </div>
             </div>
           </motion.div>

@@ -155,12 +155,12 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  //href="mailto:info@ambeyinterior.com"
+                  //href="mailto:ambeyinterio2003@gmail.com"
                   href="mailto:akashmi5746@gmail.com"
                   className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors"
                 >
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span>info@ambeyinterior.com</span>
+                  <span>ambeyinterio2003@gmail.com</span>
                 </a>
               </li>
             </ul>
@@ -174,16 +174,16 @@ const Footer = () => {
           </p>
           <div className="flex gap-6 text-sm">
             <Link
-              to="/privacy"
+              to="/privacy-policy"
               className="text-primary-foreground/60 hover:text-accent transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              to="/terms"
+              to="/terms-and-conditions"
               className="text-primary-foreground/60 hover:text-accent transition-colors"
             >
-              Terms of Service
+              Terms & Conditions
             </Link>
           </div>
         </div>
