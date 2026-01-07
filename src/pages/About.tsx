@@ -21,20 +21,7 @@ const team = [
   {
     name: "Akash Mishra",
     role: "Senior Interior Architect",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Rohit Mehta",
-    role: "Project Manager",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Priya Sharma",
-    role: "3D Visualization Expert",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "/About_us/image.png",
   },
 ];
 
@@ -172,7 +159,7 @@ const About = () => {
             description="Our talented team of designers and architects bring creativity, expertise, and passion to every project."
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-8 justify-items-center max-w-2xl mx-auto">
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
