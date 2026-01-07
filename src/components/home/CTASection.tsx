@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const CTASection = () => {
-  const phoneNumber = "919876543210";
-  const message = encodeURIComponent("Hello! I'm interested in getting a free quote for interior design services.");
+  const phoneNumber = "918081904199";
+  const message = encodeURIComponent(
+    "Hello! I'm interested in getting a free quote for interior design services."
+  );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
@@ -27,7 +29,9 @@ const CTASection = () => {
             Ready to Transform Your Space?
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 leading-relaxed">
-            Get a free consultation and quote for your dream interior. Our experts will help you create the perfect space that reflects your style and personality.
+            Get a free consultation and quote for your dream interior. Our
+            experts will help you create the perfect space that reflects your
+            style and personality.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
