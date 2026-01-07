@@ -49,37 +49,37 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="outline" size="xl" className="gap-3">
+              {/* <Button variant="outline" size="xl" className="gap-3">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                   <Play className="w-4 h-4 text-accent fill-accent" />
                 </div>
                 Watch Our Work
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Stats */}
-            <div className="flex flex-wrap gap-8 pt-8 border-t border-border">
-              <div>
-                <p className="font-display text-3xl md:text-4xl font-bold text-foreground">
+            <div className="flex gap-4 md:gap-8 pt-8 border-t border-border justify-between">
+              <div className="flex-1">
+                <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
                   3+
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Years Experience
                 </p>
               </div>
-              <div>
-                <p className="font-display text-3xl md:text-4xl font-bold text-foreground">
+              <div className="flex-1">
+                <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
                   163
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   Projects Completed
                 </p>
               </div>
-              <div>
-                <p className="font-display text-3xl md:text-4xl font-bold text-foreground">
+              <div className="flex-1">
+                <p className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
                   98%
                 </p>
-                <p className="text-sm text-muted-foreground">Happy Clients</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Happy Clients</p>
               </div>
             </div>
           </motion.div>
