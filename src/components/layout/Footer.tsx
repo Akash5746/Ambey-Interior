@@ -14,10 +14,10 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container-custom pt-10 md:pt-24 lg:pt-32 pb-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container-custom pt-8 md:pt-12 lg:pt-16 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-6">
+          <div className="space-y-5">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-accent rounded-sm flex items-center justify-center">
                 <span className="text-accent-foreground font-display font-bold text-xl">
@@ -33,50 +33,50 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed">
+            <p className="text-sm md:text-base text-primary-foreground/80 leading-relaxed">
               Transforming spaces into stunning interiors. We bring your vision
               to life with creativity, quality craftsmanship, and attention to
               detail.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
                 aria-label="YouTube"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
               >
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 sm:gap-12 col-span-1 md:col-span-2 lg:col-span-2">
+          <div className="grid grid-cols-2 gap-6 sm:gap-8 col-span-1 md:col-span-2 lg:col-span-2">
             {/* Quick Links */}
             <div>
-              <h4 className="font-display text-lg font-semibold mb-6">
+              <h4 className="font-display text-lg font-semibold mb-4">
                 Quick Links
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-2.5">
                 {[
                   "Home",
                   "About Us",
@@ -94,7 +94,7 @@ const Footer = () => {
                           ? "/about"
                           : `/${link.toLowerCase()}`
                       }
-                      className="text-primary-foreground/80 hover:text-accent transition-colors"
+                      className="text-sm md:text-base text-primary-foreground/80 hover:text-accent transition-colors"
                     >
                       {link}
                     </Link>
@@ -105,10 +105,10 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h4 className="font-display text-lg font-semibold mb-6">
+              <h4 className="font-display text-lg font-semibold mb-4">
                 Our Services
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-2.5">
                 {[
                   "Modular Kitchen",
                   "Bedroom Interior",
@@ -120,7 +120,7 @@ const Footer = () => {
                   <li key={service}>
                     <Link
                       to="/services"
-                      className="text-primary-foreground/80 hover:text-accent transition-colors"
+                      className="text-sm md:text-base text-primary-foreground/80 hover:text-accent transition-colors"
                     >
                       {service}
                     </Link>
@@ -132,10 +132,10 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">
+            <h4 className="font-display text-lg font-semibold mb-4">
               Contact Us
             </h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3 text-sm md:text-base">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80">
@@ -168,11 +168,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-primary-foreground/60 text-sm">
             © {currentYear} Ambey Interior. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
+          <div className="flex gap-5 text-sm">
             <Link
               to="/privacy-policy"
               className="text-primary-foreground/60 hover:text-accent transition-colors"
